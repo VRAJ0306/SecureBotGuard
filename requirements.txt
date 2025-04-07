@@ -3,4 +3,4 @@ uvicorn
 openai
 python-dotenv
 google-generativeai
-pip install --upgrade pip
+
