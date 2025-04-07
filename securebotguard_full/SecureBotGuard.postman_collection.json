@@ -1,0 +1,38 @@
+{
+  "info": {
+    "name": "SecureBotGuard API",
+    "_postman_id": "12345-abcde-67890-fghij",
+    "description": "Postman collection for testing SecureBotGuard chatbot middleware",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Secure Chat Request",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"user_id\": \"test_user\",\n  \"message\": \"What is my email: john@example.com?\"\n}"
+        },
+        "url": {
+          "raw": "http://localhost:8000/secure-chat",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8000",
+          "path": [
+            "secure-chat"
+          ]
+        }
+      },
+      "response": []
+    }
+  ]
+}
